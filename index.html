@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.4.0/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://openlayers.org/en/v3.4.0/build/ol.js" type="text/javascript"></script>
+	<script src="map.js" type="text/javascript"></script>
+    <title>Weather On Click</title>
+  </head>
+  <body>
+    <h2 class="text-center">Weather On Click</h2>
+    <div id="map" class="map"></div>
+	<div id="posSouris" style="display:none;"></div>
+	<div class="well">
+		<h2 id="etatMsg">Séléctionnez une ville sur la carte</h2>
+		<div id="infoVille" style="display:none;">
+			<h2 id="nomVille">Information</h2>
+			<h3><img id="icoTemps"></img> <span id="description"></span></h3>
+			<p>Température : <span id="tempCelcius"></span>°C</p>
+			<p>Humidité : <span id="humidePrc"></span>%</p>
+			<p>Nuage : <span id="nuagePrc"></span>%</p>
+			<p>Vent : <span id="ventVitesse"></span> m/s</p>
+			<p>Lever du soleil : <span id="leverSoleil"></span></p>
+			<p>Coucher du soleil : <span id="coucherSoleil"></span></p>
+		</div>
+	</div>
+  </body>
+  <footer id="lol" class="text-center">
+	<small>Mehdi Kermad - Rachid Edjekouane - Mehmet Oktem</small>
+  </footer>
+</html>
